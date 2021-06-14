@@ -55,8 +55,8 @@
     (mod_edge_width 0.12)
     (mod_text_size 1 1)
     (mod_text_width 0.15)
-    (pad_size 10 4.5)
-    (pad_drill 8)
+    (pad_size 4.4 4.4)
+    (pad_drill 2.2)
     (pad_to_mask_clearance 0.051)
     (solder_mask_min_width 0.25)
     (aux_axis_origin 0 0)
@@ -320,44 +320,6 @@
     (add_net GND)
   )
 
-  (module MountingHole:MountingHole_2.2mm_M2_Pad (layer F.Cu) (tedit 60C6BF24) (tstamp 60C6C008)
-    (at 299.4025 73.279)
-    (descr "Mounting Hole 2.2mm, M2")
-    (tags "mounting hole 2.2mm m2")
-    (attr virtual)
-    (fp_text reference REF** (at 0 -3.2) (layer F.SilkS) hide
-      (effects (font (size 1 1) (thickness 0.15)))
-    )
-    (fp_text value MountingHole_2.2mm_M2_Pad (at 0 3.2) (layer F.Fab) hide
-      (effects (font (size 1 1) (thickness 0.15)))
-    )
-    (fp_circle (center 0 0) (end 2.45 0) (layer F.CrtYd) (width 0.05))
-    (fp_circle (center 0 0) (end 2.2 0) (layer Cmts.User) (width 0.15))
-    (fp_text user %R (at 0.3 0) (layer F.Fab)
-      (effects (font (size 1 1) (thickness 0.15)))
-    )
-    (pad 1 thru_hole oval (at 0 0) (size 10 4.5) (drill oval 8 2.5) (layers *.Cu *.Mask))
-  )
-
-  (module MountingHole:MountingHole_2.2mm_M2_Pad (layer F.Cu) (tedit 60C6BF24) (tstamp 60C6BBD0)
-    (at 15.9385 73.279)
-    (descr "Mounting Hole 2.2mm, M2")
-    (tags "mounting hole 2.2mm m2")
-    (attr virtual)
-    (fp_text reference REF** (at 0 -3.2) (layer F.SilkS) hide
-      (effects (font (size 1 1) (thickness 0.15)))
-    )
-    (fp_text value MountingHole_2.2mm_M2_Pad (at 0 3.2) (layer F.Fab) hide
-      (effects (font (size 1 1) (thickness 0.15)))
-    )
-    (fp_text user %R (at 0.3 0) (layer F.Fab)
-      (effects (font (size 1 1) (thickness 0.15)))
-    )
-    (fp_circle (center 0 0) (end 2.2 0) (layer Cmts.User) (width 0.15))
-    (fp_circle (center 0 0) (end 2.45 0) (layer F.CrtYd) (width 0.05))
-    (pad 1 thru_hole oval (at 0 0) (size 10 4.5) (drill oval 8 2.5) (layers *.Cu *.Mask))
-  )
-
   (module MountingHole:MountingHole_2.2mm_M2_Pad (layer F.Cu) (tedit 56D1B4CB) (tstamp 60B8AD5F)
     (at 271.907 44.577)
     (descr "Mounting Hole 2.2mm, M2")
@@ -375,6 +337,32 @@
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (pad 1 thru_hole circle (at 0 0) (size 4.4 4.4) (drill 2.2) (layers *.Cu *.Mask))
+  )
+
+  (module acheron_MountingHoles:halfSideHole (layer F.Cu) (tedit 5D40A9CE) (tstamp 60C04764)
+    (at 299.4025 73.279)
+    (fp_text reference G*** (at 3 -5) (layer Edge.Cuts) hide
+      (effects (font (size 1.524 1.524) (thickness 0.3)))
+    )
+    (fp_text value LOGO (at 3 5) (layer Edge.Cuts) hide
+      (effects (font (size 1.524 1.524) (thickness 0.3)))
+    )
+    (fp_line (start -6 0) (end 6 0) (layer Cmts.User) (width 0.1))
+    (fp_line (start 0 -4) (end 0 4) (layer Cmts.User) (width 0.1))
+    (pad "" thru_hole oval (at 0 0) (size 10 4.5) (drill oval 8 2.5) (layers *.Cu *.Mask))
+  )
+
+  (module acheron_MountingHoles:halfSideHole (layer F.Cu) (tedit 5D40A9CE) (tstamp 60C04AAC)
+    (at 15.9385 73.279)
+    (fp_text reference G*** (at 3 -5) (layer Edge.Cuts) hide
+      (effects (font (size 1.524 1.524) (thickness 0.3)))
+    )
+    (fp_text value LOGO (at 3 5) (layer Edge.Cuts) hide
+      (effects (font (size 1.524 1.524) (thickness 0.3)))
+    )
+    (fp_line (start -6 0) (end 6 0) (layer Cmts.User) (width 0.1))
+    (fp_line (start 0 -4) (end 0 4) (layer Cmts.User) (width 0.1))
+    (pad "" thru_hole oval (at 0 0) (size 10 4.5) (drill oval 8 2.5) (layers *.Cu *.Mask))
   )
 
   (module MX_Only:MXOnly-2.25U-NoLED (layer F.Cu) (tedit 5BD3C6E1) (tstamp 60A38344)
