@@ -3,7 +3,7 @@ Reference 60% PCB
 
 ---
 
-## Contributers
+## Footprint Libraries Used
 
 - https://github.com/AcheronProject/AcheronLibrary
 - https://github.com/ai03-2725/MX_Alps_Hybrid
