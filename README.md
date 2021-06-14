@@ -1,5 +1,5 @@
-# 60 PCB
-Reference 60% PCB
+# 60% PCB
+Basic 60% PCB for reference
 
 ---
 
